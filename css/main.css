@@ -1,0 +1,281 @@
+:root {
+  --theme-color: white;
+  --primary-color: #124f88;
+  --secundary-color: #f7c331;
+  --text-color-inverse: white;
+  --text-color: black;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3a4460;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--theme-color);
+  color: var(--text-color);
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.perfil {
+  text-align: center;
+}
+
+.perfil-container {
+  display: flex;
+  padding: 0 2rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+  padding: 2srem;
+}
+
+.perfil-info-title {
+  color: var(--text-color);
+  margin: 0;
+  padding-top: 4.8rem;
+}
+
+.perfil-info-description {
+  letter-spacing: 0.11rem;
+}
+
+.perfil__info-link-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.perfil__info-link {
+  background-color: #5294a8;
+  border: 0.13rem solid #294750;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #20232a;
+  transition: all 0.5s;
+}
+
+.perfil__info-link:hover {
+  border: 0.1rem solid #20232a;
+  background-color: #fff;
+}
+
+.perfil__cover-image {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.7rem;
+}
+
+.perfil__cover-container {
+  display: flex;
+  border: 0.25rem solid rgb(53, 71, 94);
+  max-width: 18rem;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.perfil__cover-container:hover {
+  box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
+}
+
+.perfil__image {
+  width: 100%;
+}
+
+.experiencia {
+  background-color: #282c34;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.experiencia-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1024px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.experiencia__title {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.experiencia__experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experiencia__experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencia__date {
+  color: #61dafb;
+  margin: 0;
+}
+
+.experiencia__company {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.experiencia__role {
+  color: #61dafb;
+  margin: 0;
+  font-weight: 400;
+}
+
+.experiencia__activities {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.experiencia__activity {
+  list-style: square;
+}
+
+.wave-separator {
+  margin: 0 0 -0.5rem 0;
+}
+
+.wave-separator--r-180deg {
+  margin: -0.5rem 0 0 0;
+  transform: rotate(180deg);
+}
+
+.wave-separator__wave-container {
+  display: flex;
+  margin: 0;
+}
+
+.wave-separator__wave {
+  width: 100%;
+}
+
+.contacto {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.contacto__tittle {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contacto__form-input {
+  border: 0.2rem solid #282c34;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.contacto__form-input:hover {
+  color: #f7c331;
+}
+.contacto__form-input:hover {
+  box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
+}
+
+.contacto__form-button {
+  align-self: center;
+  background-color: #5294a8;
+  border: 0.13rem solid #294750;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: #20232a;
+  transition: all 0.5s;
+}
+
+.contacto__form-button:hover {
+  box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skills__tittle {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.skills__tittle::before {
+  content: '🔥';
+}
+
+.skills__tittle::after {
+  content: '🔥';
+}
+
+.skills__skills-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding-top: 2rem;
+}
+
+.skills__skill {
+  background-color: #61dafb;
+  color: initial;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.skills__skill:hover {
+  background-color: white;
+}
+
+@media (max-width: 854px) {
+  .perfil-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil-info-title {
+  font-size: 2.5rem;
+}
+.perfil-info{
+  flex: 1;
+}
+.perfil__cover-image {
+  flex: 1;
+}
