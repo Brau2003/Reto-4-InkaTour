@@ -90,14 +90,13 @@ a {
   width: 100%;
 }
 
-
-.experiencia {
+.prom {
   background-color: #282c34;
   color: #fff;
   padding: 2rem 0;
 }
 
-.experiencia-container {
+.prom-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,46 +106,50 @@ a {
   padding: 0 2rem;
 }
 
-.experiencia__title {
+.prom__title {
   margin: 0;
   font-size: 2rem;
   text-align: center;
 }
 
-.experiencia__experiences {
+.prom__items {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.experiencia__experience {
+.prom__item {
   display: flex;
   flex-direction: column;
 }
 
-.experiencia__date {
+.prom__paquete {
   color: #61dafb;
   margin: 0;
 }
 
-.experiencia__company {
+.prom__description {
   font-size: 1.5rem;
   margin: 0;
 }
 
-.experiencia__role {
+.prom__price {
   color: #61dafb;
   margin: 0;
   font-weight: 400;
 }
 
-.experiencia__activities {
+.prom__activities {
   margin: 0;
   margin-top: 0.5rem;
 }
 
-.experiencia__activity {
-  list-style: square;
+.prom__activity {
+  list-style-type: "🔥" ;
+}
+
+.prom__activity-2 {
+  list-style: decimal ;
 }
 
 .wave-separator {
@@ -166,6 +169,8 @@ a {
 .wave-separator__wave {
   width: 100%;
 }
+
+
 
 .contacto {
   text-align: center;
