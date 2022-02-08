@@ -1,4 +1,5 @@
 :root {
+  scroll-behavior: smooth;
   --theme-color: white;
   --primary-color: #124f88;
   --secundary-color: #f7c331;
@@ -6,6 +7,7 @@
   --text-color: black;
   --navbar-shallow-color: #e5e5e5;
   --menu-mobile-background-color: #3a4460;
+
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -17,40 +19,42 @@ a {
   color: var(--text-color);
 }
 
-.perfil {
+.desc {
   text-align: center;
 }
 
-.perfil-container {
+.desc-container {
   display: flex;
   padding: 0 2rem;
   max-width: 1024px;
   margin: 0 auto;
 }
 
-.perfil-info {
+.desc-info {
   display: flex;
   flex-direction: column;
-  padding: 2srem;
+  padding: 2rem;
 }
 
-.perfil-info-title {
+.desc-info-title {
+  font-size: 1.7rem;
   color: var(--text-color);
   margin: 0;
-  padding-top: 4.8rem;
+  padding-top: rem;
 }
 
-.perfil-info-description {
+.desc-info-description {
   letter-spacing: 0.11rem;
 }
 
-.perfil__info-link-container {
+.desc__info-link-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.perfil__info-link {
+.desc__info-link {
+  font-weight: 800;
   background-color: #5294a8;
   border: 0.13rem solid #294750;
   padding: 0.5rem 1rem;
@@ -60,41 +64,41 @@ a {
   transition: all 0.5s;
 }
 
-.perfil__info-link:hover {
+.desc__info-link:hover {
   border: 0.1rem solid #20232a;
   background-color: #fff;
 }
 
-.perfil__cover-image {
+.desc__cover-image {
   display: flex;
   justify-content: center;
   padding-top: 0.7rem;
 }
 
-.perfil__cover-container {
+.desc__cover-container {
   display: flex;
   border: 0.25rem solid rgb(53, 71, 94);
   max-width: 18rem;
-  border-radius: 50%;
+  border-radius: 15% 15% 15% 15%;
   overflow: hidden;
   transition: all 0.5s;
 }
 
-.perfil__cover-container:hover {
+.desc__cover-container:hover {
   box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
 }
 
-.perfil__image {
+.desc__image {
   width: 100%;
 }
 
-.experiencia {
-  background-color: #282c34;
+.prom {
+  background-color: #0b1a42f6;
   color: #fff;
   padding: 2rem 0;
 }
 
-.experiencia-container {
+.prom-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,46 +108,50 @@ a {
   padding: 0 2rem;
 }
 
-.experiencia__title {
+.prom__title {
   margin: 0;
   font-size: 2rem;
   text-align: center;
 }
 
-.experiencia__experiences {
+.prom__items {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.experiencia__experience {
+.prom__item {
   display: flex;
   flex-direction: column;
 }
 
-.experiencia__date {
+.prom__paquete {
   color: #61dafb;
   margin: 0;
 }
 
-.experiencia__company {
+.prom__description {
   font-size: 1.5rem;
   margin: 0;
 }
 
-.experiencia__role {
+.prom__price {
   color: #61dafb;
   margin: 0;
   font-weight: 400;
 }
 
-.experiencia__activities {
+.prom__activities {
   margin: 0;
   margin-top: 0.5rem;
 }
 
-.experiencia__activity {
-  list-style: square;
+.prom__activity {
+  list-style-type: "🔥" ;
+}
+
+.prom__activity-2 {
+  list-style: decimal ;
 }
 
 .wave-separator {
@@ -163,6 +171,7 @@ a {
 .wave-separator__wave {
   width: 100%;
 }
+
 
 .contacto {
   text-align: center;
@@ -194,17 +203,18 @@ a {
   border-radius: 0.5rem;
   padding: 0.75rem;
   outline: none;
-  cursor: pointer;
+  cursor: auto;
 }
 
 .contacto__form-input:hover {
-  color: #f7c331;
+  color: #133e44;
 }
 .contacto__form-input:hover {
   box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
 }
 
 .contacto__form-button {
+  font-weight: 800;
   align-self: center;
   background-color: #5294a8;
   border: 0.13rem solid #294750;
@@ -213,69 +223,98 @@ a {
   text-decoration: none;
   color: #20232a;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .contacto__form-button:hover {
   box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.footer-father {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.skills__tittle {
-  margin: 0;
-  font-size: 2rem;
+.footer-container {
+  font-weight: 400;
+  background-color: #ededed;
+  padding: 40px;
+}
+
+.footer-container,
+.social {
   text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
 }
 
-.skills__tittle::before {
-  content: '🔥';
+.footer-container .social a {
+  font-size: 28px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
 }
 
-.skills__tittle::after {
-  content: '🔥';
+.footer-container .social a:hover {
+  opacity: 5 ;
 }
 
-.skills__skills-list {
-  display: flex;
-  justify-content: center;
+.footer__list {
+  margin-top: 0;
+  padding: 0;
   list-style: none;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 0;
-  padding-top: 2rem;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+
 }
 
-.skills__skill {
-  background-color: #61dafb;
-  color: initial;
-  font-weight: bold;
-  font-size: 0.8rem;
-  padding: 4px 8px;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
+.footer__list a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
-.skills__skill:hover {
-  background-color: white;
+.footer__list-item {
+  display: inline-block;
+  padding: 0 15px;
+
 }
+
+.footer__list-item a:hover {
+  opacity: 3;
+}
+
+.copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+
 
 @media (max-width: 854px) {
-  .perfil-container {
+  .desc-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.perfil-info-title {
-  font-size: 2.5rem;
+.desc-info-title {
+  font-size: 2rem;
 }
-.perfil-info{
+.desc-info{
   flex: 1;
 }
-.perfil__cover-image {
+.desc__cover-image {
   flex: 1;
 }

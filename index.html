@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InkaTour</title>
+    <title>InkaTour: Agencia de viajes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <script defer src="./js/app.js"></script>
     <link rel="shortcut icon"
         href="https://thumbs.dreamstime.com/b/llama-de-la-roca-con-las-gafas-sol-y-el-pendiente-vector-aislado-144517999.jpg"
         type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -25,7 +28,7 @@
                 <img height="50" width="50"
                     src="https://encuentroregistral2020.sunarp.gob.pe/repositorio/imagenes/linea-grafica/cusco-azul.png"
                     alt="Logo de la Agencia">
-                <div class="name-logo">InkaTour: Agencia <br />
+                <div class="name-logo">InkaTour: Agencia de viajes <br />
                     "Tours hechos a tu medida"
                 </div>
             </a>
@@ -36,13 +39,156 @@
                 <button class="close-menu" aria-label="Cerrar menú">
                     <img src="./img/close-icon.svg" alt="cerrar menú">
                 </button>
-                <li><a href="#profile" class="items">Descripción</a></li>
-                <li><a href="#experience" class="items">Ofertas</a></li>
-                <li><a href="#skills" class="items">Testimonios</a></li>
-                <li><a href="#contact" class="items">Contacto</a></li>
+                <li><a href="#description" class="items">Descripción</a></li>
+                <li><a href="#promotion" class="items">Promociones</a></li>
+                <li><a href="#testimony" class="items">Testimonios</a></li>
+                <li><a href="#reservation" class="items">Reservas</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <article class="desc">
+            <div class="desc-container">
+                <div class="desc-info">
+                    <h1 class="desc-info-title" id="description">INKATOUR "TOURS HECHOS A TU MEDIDA"</h1>
+                    <p class="desc-info-description">
+                        Bienvenidos a InkaTour !! Nuestra empresa tiene como fin ofrecer al viajero una herramienta que
+                        pueda facilitar su visita a los destinos turísticos más importantes que tiene la ciudad del
+                        Cusco. En esta pagina podrás encontrar información detallada y actualizada de todos los
+                        atractivos turísticos de la zona, hoteles, tours y entre otros.
+                    </p>
+                    <div class="desc__info-link-container">
+                        <a href="#" class="desc__info-link">CONTACTANOS YA!!!</a>
+                    </div>
+                </div>
+                <div class="desc__cover-image">
+                    <figure class="desc__cover-container">
+                        <img src="https://static.hosteltur.com/app/public/uploads/img/articles/2020/05/12/L_084657_machu-picchu003.jpg"
+                            alt="Juan Braulio" class="" width="320px" />
+                    </figure>
+                </div>
+            </div>
+        </article>
+
+        <section class="wave-separator">
+            <figure class="wave-separator__wave-container">
+                <img src="./img/wave.svg" alt="Wave de separación" class="wave-separator__wave" />
+            </figure>
+        </section>
+
+        <section class="prom">
+            <div class="prom-container">
+                <h2 class="prom__title" id="promotion">PROMOCIONES</h2>
+                <div class="prom__items">
+                    <section class="prom__item">
+                        <h4 class="prom__paquete"> PRIMER PAQUETE OFERTA:</h4>
+                        <h3 class="prom__description">Cusco + Hidroelectrica - Machu Picchu + Montaña de 7 colores
+                        </h3>
+                        <h4 class="prom__price">Desde: US$ 279</h4>
+                        <h4 class="prom__price">INCLUYE</h4>
+                        <ul class="prom__activities">
+                            <li class="prom__activity">Traslados Aeropuerto - Hotel - Aeropuerto</li>
+                            <li class="prom__activity">Almuerzo Shows (Danzas Y Comida Tradicional)</li>
+                            <li class="prom__activity">Tour Por La Ciudad (Bus Panoramico)</li>
+                            <li class="prom__activity">Ritual De La Hoja De Coca</li>
+                            <li class="prom__activity">Mirador Cristo Blanco</li>
+                            <li class="prom__activity">Machu Picchu 2d/1n</li>
+                            <li class="prom__activity">Ticktes De Ingreso A Machupicchu</li>
+                            <li class="prom__activity">Montaña 7 Colores</li>
+                            <li class="prom__activity">03 Noches De Alojamiento</li>
+                            <li class="prom__activity">Desayunos Incluidos</li>
+                        </ul>
+                        <h4 class="prom__activities">NO INCLUYE</h4>
+                        <ul class="experiencia__activities">
+                            <li class="prom__activity">Entrada a los baños termales</li>
+                            <li class="prom__activity">Otros servicios no mencionados.</li>
+                        </ul>
+                    </section>
+                    <section class="prom__item">
+                        <h4 class="prom__paquete"> SEGUNDO PAQUETE OFERTA:</h4>
+                        <h3 class="prom__description">BUS PANORAMICO CUSCO
+                        </h3>
+                        <h4 class="prom__price">Desde: US$ 9</h4>
+                        <h4 class="prom__price">DESCRIPCIÓN</h4>
+                        <ul class="prom__activities">
+                            <li class="prom__activity-2">Este es un programa de viaje sencillo y económico pero a
+                                su vez interesante y atractivo. Todo empezará en Cusco, usted tiene la posibilidad de
+                                elegir entre dos horarios de salida, el primero es a las 10 de la mañana y el segundo es
+                                a las 2 y 15 de la tarde</li>
+                            <li class="prom__activity-2">Empezaremos realizando una ceremonia o ritual con la hoja
+                                de coca, una ofrenda que se realiza por un sacerdote andino o Pampamisayoc, continua
+                                nuestro viaje con la visita y parada en el mirador del cristo blanco desde este punto
+                                podemos apreciar la ciudad del cusco en toda su magnitud</li>
+                            <li class="prom__activity-2">Nuestra tercera parada será en el templo de San Cristóbal
+                                donde visitaremos el campanario, el palacio de Qolcampata. El tour terminará cerca a la
+                                plaza de Armas del Cusco.</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="wave-separator wave-separator--r-180deg">
+            <figure class="wave-separator__wave-container">
+                <img src="./img/wave.svg" alt="Wave de separación" class="wave-separator__wave" />
+            </figure>
+        </section>
+
+        <section class="contacto" id="reservation">
+            <div class="contacto-container">
+                <h2 class="contacto__tittle">Contactanos</h2>
+                <form action="/" class="contacto__form">
+                    <input type="text" placeholder="Nombre" name="nombre" required class="contacto__form-input"
+                        title="Solo nombres validos" />
+
+                    <input type="email" placeholder="Correo" name="email" class="contacto__form-input" required />
+
+                    <input type="number" id="celular" placeholder="Celular" name="celular" min="900000000"
+                        max="999999999" class="contacto__form-input" required />
+
+                    <input type="text" placeholder="Nacionality" name="nacionalidad" class="contacto__form-input"
+                        required />
+
+                    <input type="number" placeholder="Numero de personas" name="integrantes" min="0" max="10"
+                        class="contacto__form-input">
+
+                    <button class="contacto__form-button">RESERVAR AHORA</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-father">
+        <section class="footer-container">
+            <div class="social">
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=51935850519"><i class="fab fa-snapchat"></i></a>
+                <a href="mailto:ccus.braulio.condor@gmail.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/Braulio CH"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#description">Description</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#promotion">Promotions</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#reservation">Terms</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#description">Privacy Policy</a>
+                </li>
+            </ul>
+            <p class="copyright">Desarrollado por Juan Braulio Condor &copy 2022</p>
+        </section>
+
+    </footer>
+
 
 </body>
 
