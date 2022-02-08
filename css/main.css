@@ -93,7 +93,7 @@ a {
 }
 
 .prom {
-  background-color: #282c34;
+  background-color: #0b1a42f6;
   color: #fff;
   padding: 2rem 0;
 }
@@ -214,6 +214,7 @@ a {
 }
 
 .contacto__form-button {
+  font-weight: 800;
   align-self: center;
   background-color: #5294a8;
   border: 0.13rem solid #294750;
@@ -227,6 +228,76 @@ a {
 
 .contacto__form-button:hover {
   box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
+}
+
+.footer-father {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  font-weight: 400;
+  background-color: #ededed;
+  padding: 40px;
+}
+
+.footer-container,
+.social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+
+.footer-container .social a {
+  font-size: 28px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer-container .social a:hover {
+  opacity: 5 ;
+}
+
+.footer__list {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+
+}
+
+.footer__list a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer__list-item {
+  display: inline-block;
+  padding: 0 15px;
+
+}
+
+.footer__list-item a:hover {
+  opacity: 3;
+}
+
+.copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 15px;
 }
 
 
