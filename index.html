@@ -37,18 +37,18 @@
                     <img src="./img/close-icon.svg" alt="cerrar menú">
                 </button>
                 <li><a href="#description" class="items">Descripción</a></li>
-                <li><a href="#promomotions" class="items">Promociones</a></li>
+                <li><a href="#promotion" class="items">Promociones</a></li>
                 <li><a href="#testimony" class="items">Testimonios</a></li>
-                <li><a href="#contact" class="items">Contacto</a></li>
+                <li><a href="#reservation" class="items">Reservas</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <article class="desc" id="description">
+        <article class="desc">
             <div class="desc-container">
                 <div class="desc-info">
-                    <h1 class="desc-info-title">INKATOUR "TOURS HECHOS A TU MEDIDA"</h1>
+                    <h1 class="desc-info-title" id="description">INKATOUR "TOURS HECHOS A TU MEDIDA"</h1>
                     <p class="desc-info-description">
                         Bienvenidos a InkaTour !! Nuestra empresa tiene como fin ofrecer al viajero una herramienta que
                         pueda facilitar su visita a los destinos turísticos más importantes que tiene la ciudad del
@@ -74,9 +74,9 @@
             </figure>
         </section>
 
-        <section class="prom" id="promotions">
+        <section class="prom">
             <div class="prom-container">
-                <h2 class="prom__title">PROMOCIONES</h2>
+                <h2 class="prom__title" id="promotion">PROMOCIONES</h2>
                 <div class="prom__items">
                     <section class="prom__item">
                         <h4 class="prom__paquete"> PRIMER PAQUETE OFERTA:</h4>
@@ -121,14 +121,7 @@
                                 donde visitaremos el campanario, el palacio de Qolcampata. El tour terminará cerca a la
                                 plaza de Armas del Cusco.</li>
                         </ul>
-                        <h4 class="prom__activities">NO INCLUYE</h4>
-                        <ul class="experiencia__activities">
-                            <li class="prom__activity">Entrada a los baños termales</li>
-                            <li class="prom__activity">Otros servicios no mencionados.</li>
-                        </ul>
                     </section>
-
-                   
                 </div>
             </div>
         </section>
@@ -139,8 +132,70 @@
             </figure>
         </section>
 
+        <section class="contacto" id="contacto">
+            <div class="contacto-container">
+                <h2 class="contacto__tittle">Contactanos</h2>
+                <form action="/" class="contacto__form">
+                    <input type="text" placeholder="Nombre" name="nombre" required class="contacto__form-input"
+                        title="Solo nombres validos" />
 
+                    <input type="email" placeholder="Correo" name="email" class="contacto__form-input" required />
+
+                    <input type="number" id="celular" placeholder="Celular" name="celular" min="900000000"
+                        max="999999999" class="contacto__form-input" required />
+
+                    <input type="text" placeholder="Nacionality" name="nacionalidad" class="contacto__form-input" required />
+                  
+                    <input type="number" placeholder="Numero de personas" name="integrantes" min="0" max="10" class="contacto__form-input">
+                   
+                    <button class="contacto__form-button">RESERVAR AHORA</button>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer>
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="Images/logo-magtimus.png" alt="">
+                </div>
+                <div class="terms">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam deleniti sapiente deserunt.</p>
+                </div>
+            </div>
+            <div class="box__footer">
+                <h2>Soluciones</h2>
+                <a href="https://www.google.com">App Desarrollo</a>
+                <a href="#">App Marketing</a>
+                <a href="#">IOS Desarrollo</a>
+                <a href="#">Android Desarrollo</a>
+            </div>
+
+            <div class="box__footer">
+                <h2>Compañia</h2>
+                <a href="#">Acerca de</a>
+                <a href="#">Trabajos</a>
+                <a href="#">Procesos</a>
+                <a href="#">Servicios</a>              
+            </div>
+
+            <div class="box__footer">
+                <h2>Redes Sociales</h2>
+                <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+            </div>
+
+        </div>
+
+        <div class="box__copyright">
+            <hr>
+            <p>Todos los derechos reservados © 2021 <b>MagtimusPro</b></p>
+        </div>
+    </footer>
 
 </body>
 
