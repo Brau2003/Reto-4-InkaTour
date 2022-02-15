@@ -183,6 +183,13 @@ a {
   min-height: 100vh;
   background-color: aquamarine;
 }
+
+.card__tittle {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .card {
   position: relative;
   width: 300px;
