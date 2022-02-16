@@ -9,6 +9,7 @@
   --menu-mobile-background-color: #3a4460;
 
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--theme-color);
@@ -17,6 +18,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -150,11 +152,11 @@ a {
 }
 
 .prom__activity {
-  list-style-type: "🔥" ;
+  list-style-type: "🔥";
 }
 
 .prom__activity-2 {
-  list-style: decimal ;
+  list-style: decimal;
 }
 
 .wave-separator {
@@ -181,13 +183,25 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  padding-top: -6rem;
 }
 
 .card__tittle {
-  margin: 0;
+  /* margin: 1px;
   font-size: 2rem;
   text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0; */
+  text-align: center;
+  padding: 2.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-decoration: underline;
+  text-decoration-color: beige;
+  color: white;
+  background-color: black;
+  font-size: 2.4rem;
 }
 
 .card {
@@ -226,7 +240,7 @@ a {
   width: 100%;
   line-height: 45px;
   color: #fff;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
 }
 
@@ -262,6 +276,7 @@ a {
 .card:hover .front {
   transform: perspective(600px) rotateY(180deg);
 }
+
 .card:hover .back {
   transform: perspective(600px) rotateY(360deg);
 }
@@ -269,6 +284,7 @@ a {
 .contacto {
   text-align: center;
   padding: 2rem 0;
+  padding-top: 8rem;
 }
 
 .contacto-container {
@@ -302,6 +318,7 @@ a {
 .contacto__form-input:hover {
   color: #133e44;
 }
+
 .contacto__form-input:hover {
   box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
 }
@@ -357,7 +374,7 @@ a {
 }
 
 .footer-container .social a:hover {
-  opacity: 5 ;
+  opacity: 5;
 }
 
 .footer__list {
@@ -400,14 +417,16 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.desc-info-title {
-  font-size: 2rem;
-}
-.desc-info{
-  flex: 1;
-}
-.desc__cover-image {
-  flex: 1;
-}
+  .desc-info-title {
+    font-size: 2rem;
+  }
+
+  .desc-info {
+    flex: 1;
+  }
+
+  .desc__cover-image {
+    flex: 1;
+  }
