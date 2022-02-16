@@ -180,7 +180,13 @@ a {
 }
 
 .cards {
-  background-image: radial-gradient(var(--one-gradient-color), var(--second-gradient-color));
+  /* background-image: radial-gradient(var(--one-gradient-color), var(--second-gradient-color)); */
+  background: linear-gradient(180deg, #FE0000 16.66%,
+		#FD8C00 16.66%, 33.32%,
+		#FFE500 33.32%, 49.98%,
+		#119F0B 49.98%, 66.64%,
+		#0644B3 66.64%, 83.3%,
+		#731a83 83.3%);
   padding-top: -36px;
 }
 
@@ -207,7 +213,7 @@ a {
   text-decoration: underline;
   text-decoration-color: beige;
   color: white;
-  background-color: #0b1a42f6;
+  /* background-color: #0b1a42f6; */
   font-size: 2.4rem;
 }
 
