@@ -184,7 +184,8 @@ a {
   justify-content: center;
   min-height: 100vh;
   /* background-color: aquamarine; */
-  padding-top: -6rem;
+  padding: 0;
+  margin: 0rem;
 }
 
 .card__tittle {
@@ -430,3 +431,18 @@ a {
   .desc__cover-image {
     flex: 1;
   }
+}
+
+@media (min-width: 1106px ){
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background-color: aquamarine; */
+    padding: 0;
+    margin: -8.2rem;
+  }
+  
+}
