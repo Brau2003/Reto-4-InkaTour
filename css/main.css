@@ -7,8 +7,9 @@
   --text-color: black;
   --navbar-shallow-color: #e5e5e5;
   --menu-mobile-background-color: #3a4460;
-  --one-gradient-color:rgb(53, 112, 240);
+  --one-gradient-color: rgb(53, 112, 240);
   --second-gradient-color: rgb(6, 1, 34);
+  --highlight-text-color: #61dafb;
 
 }
 
@@ -47,7 +48,9 @@ a {
   font-size: 1.7rem;
   color: var(--text-color);
   margin: 0;
-  padding-top: rem;
+  /* padding-top: rem; */
+  text-shadow: 0 0 0.5rem var(--highlight-text-color),
+    0 0 1rem var(--menu-mobile-background-color), 0 0 1.5rem var(--menu-mobile-background-color);
 }
 
 .desc-info-description {
@@ -119,6 +122,8 @@ a {
   margin: 0;
   font-size: 2rem;
   text-align: center;
+  text-shadow: 0 0 0.5rem var(--highlight-text-color),
+    0 0 1rem var(--highlight-text-color), 0 0 1.5rem var(--highlight-text-color);
 }
 
 .prom__items {
@@ -182,11 +187,11 @@ a {
 .cards {
   /* background-image: radial-gradient(var(--one-gradient-color), var(--second-gradient-color)); */
   background: linear-gradient(180deg, #FE0000 16.66%,
-		#FD8C00 16.66%, 33.32%,
-		#FFE500 33.32%, 49.98%,
-		#119F0B 49.98%, 66.64%,
-		#0644B3 66.64%, 83.3%,
-		#731a83 83.3%);
+      #FD8C00 16.66%, 33.32%,
+      #FFE500 33.32%, 49.98%,
+      #119F0B 49.98%, 66.64%,
+      #0644B3 66.64%, 83.3%,
+      #731a83 83.3%);
   padding-top: -36px;
 }
 
@@ -215,6 +220,8 @@ a {
   color: white;
   /* background-color: #0b1a42f6; */
   font-size: 2.4rem;
+  text-shadow: 0 0 0.5rem var(--highlight-text-color),
+    0 0 1rem var(--highlight-text-color), 0 0 1.5rem var(--highlight-text-color);
 }
 
 .card {
@@ -311,7 +318,10 @@ a {
 
 .contacto__tittle {
   margin: 0;
+  text-transform: uppercase;
   font-size: 2rem;
+  text-shadow: 0 0 0.5rem var(--highlight-text-color),
+    0 0 1rem var(--menu-mobile-background-color), 0 0 1.5rem var(--menu-mobile-background-color);
 }
 
 .contacto__form {
@@ -353,7 +363,7 @@ a {
   box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
 }
 
-.container-boton{
+.container-boton {
   background-color: #2e6329;
   border: 4px solid #fff;
   position: fixed;
@@ -366,22 +376,23 @@ a {
   animation: efecto 1.2s infinite;
 }
 
-.container-boton:hover{
+.container-boton:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
 
-.boton{
+.boton {
   width: 40px;
   transition: ease 1s;
 }
 
-@keyframes efecto{
-  0%{
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
   }
-  100%{
-      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
   }
 }
 
@@ -477,7 +488,7 @@ a {
   }
 }
 
-@media (min-width: 1106px ){
+@media (min-width: 1106px) {
   .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -488,5 +499,5 @@ a {
     padding: 0;
     margin: -8.2rem;
   }
-  
+
 }

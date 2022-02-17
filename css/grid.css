@@ -28,6 +28,8 @@
     color: white;
     /* background-color: black; */
     font-size: 2.4rem;
+    text-shadow: 0 0 0.5rem var(--highlight-text-color),
+    0 0 1rem var(--highlight-text-color), 0 0 1.5rem var(--highlight-text-color);
 }
 
 .gallery__img {
