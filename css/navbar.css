@@ -1,9 +1,10 @@
 .topheader {
     box-shadow: 0 4px 5px var(--navbar-shallow-color);
-    position: sticky;
+    position: sticky !important;
     top: 0;
     background-color: var(--theme-color);
-    width: 100%;
+    width: 100% ;
+    
 
 }
 .topnav {
@@ -80,9 +81,9 @@
         opacity: 0;
         pointer-events: none;
     }
-    
     .menu li {
         padding: 0;
+        padding-top: 1.5rem;
     }
     
     .menu a {
