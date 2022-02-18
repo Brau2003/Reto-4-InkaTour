@@ -81,9 +81,9 @@
         opacity: 0;
         pointer-events: none;
     }
-    
     .menu li {
         padding: 0;
+        padding-top: 1.5rem;
     }
     
     .menu a {
