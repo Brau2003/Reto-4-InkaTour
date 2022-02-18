@@ -1,12 +1,14 @@
 .topheader {
     box-shadow: 0 4px 5px var(--navbar-shallow-color);
     position: sticky !important;
+    z-index: 100;
     top: 0;
     background-color: var(--theme-color);
-    width: 100% ;
-    
+    width: 100%;
+
 
 }
+
 .topnav {
     display: flex;
     justify-content: space-between;
@@ -51,7 +53,7 @@
 .items:hover {
     color: #61dafb;
     border-bottom: 0.25rem solid var(--menu-mobile-background-color);
-    
+
 }
 
 .menu a {
@@ -81,17 +83,18 @@
         opacity: 0;
         pointer-events: none;
     }
+
     .menu li {
         padding: 0;
         padding-top: 1.5rem;
     }
-    
+
     .menu a {
         color: var(--text-color-inverse);
         line-height: 60px;
-  
+
     }
-    
+
     .open-menu,
     .close-menu {
         display: block;
@@ -104,7 +107,7 @@
         align-self: flex-end;
         padding: 20px 15px;
     }
-    
+
     .menu_opened {
         opacity: 1;
         pointer-events: all;
