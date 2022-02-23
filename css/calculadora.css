@@ -1,0 +1,89 @@
+.calc {
+    text-align: center;
+    padding: 2rem 0;
+    padding-top: 0.5rem;
+  }
+  .container__vacationCalc{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+    padding-top: 2rem;
+    max-width: 1024px;
+    margin: auto;
+  }
+  
+  .calc__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .calc__form-input{
+    border: 0.2rem solid #1137df;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    outline: none;
+    cursor: auto;
+  }
+  
+  .calc__form-input:hover{
+    box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #4e9fa5;
+    color: #133e44;
+  }
+  
+  .btn-submit {
+    font-weight: 800;
+    align-self: center;
+    background-color: #5294a8;
+    border: 0.13rem solid #294750;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #20232a;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    box-shadow: -0.25rem 0.25rem 0.7rem 0.5rem #47abb3;
+  }
+  
+  
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -4.5rem;
+  
+  }
+  
+  .fas {
+    font-size: 2.8rem;
+    border-radius: 50%;
+    padding: 40px;
+  
+  }
+  
+  .fa-plane {
+    color: #2a96f3;
+  }
+  
+  .fa-wallet {
+    color: #a96d65;
+  }
+  
+  .fa-money-bill-wave-alt {
+    color: #42a3b8;
+  }
+  
+  .container-data {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5rem;
+  }
+  
+  .container-data h6 {
+    text-align: center;
+    font-size: 1rem;
+  }
