@@ -16,37 +16,19 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/calculadora.css">
     <script defer src="./js/app.js"></script>
     <link rel="shortcut icon"
         href="https://thumbs.dreamstime.com/b/llama-de-la-roca-con-las-gafas-sol-y-el-pendiente-vector-aislado-144517999.jpg"
         type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-
-    <title>INKATOUR "TOURS HECHOS A TU MEDIDA"</title>
-
-    <!-- Primary Meta Tags -->
-    <title>INKATOUR "TOURS HECHOS A TU MEDIDA"</title>
-    <meta name="title" content="INKATOUR " TOURS HECHOS A TU MEDIDA"">
-    <meta name="description"
-        content="Bienvenidos a InkaTour !! Nuestra empresa tiene como fin ofrecer al viajero una herramienta que pueda facilitar su visita a los destinos turísticos más importantes que tiene la ciudad del Cusco. En esta pagina podrás encontrar información detallada y actualizada de todos los atractivos turísticos de la zona, hoteles, tours y entre otros.">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://brau2003.github.io/Reto-3-InkaTour/">
-    <meta property="og:title" content="INKATOUR " TOURS HECHOS A TU MEDIDA"">
-    <meta property="og:description"
-        content="Bienvenidos a InkaTour !! Nuestra empresa tiene como fin ofrecer al viajero una herramienta que pueda facilitar su visita a los destinos turísticos más importantes que tiene la ciudad del Cusco. En esta pagina podrás encontrar información detallada y actualizada de todos los atractivos turísticos de la zona, hoteles, tours y entre otros.">
-    <meta property="og:image" content="https://static.hosteltur.com/app/public/uploads/img/articles/2020/05/12/L_084657_machu-picchu003.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://brau2003.github.io/Reto-3-InkaTour/">
-    <meta property="twitter:title" content="INKATOUR " TOURS HECHOS A TU MEDIDA"">
-    <meta property="twitter:description"
-        content="Bienvenidos a InkaTour !! Nuestra empresa tiene como fin ofrecer al viajero una herramienta que pueda facilitar su visita a los destinos turísticos más importantes que tiene la ciudad del Cusco. En esta pagina podrás encontrar información detallada y actualizada de todos los atractivos turísticos de la zona, hoteles, tours y entre otros.">
-    <meta property="twitter:image" content="">
-
+    <!-- uwu -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    /> -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </head>
 
@@ -158,6 +140,38 @@
                         </ul>
                     </section>
                 </div>
+                <section class="calc">
+                    <h2 class="prom__title">Calculadora de presupuesto de viaje :3</h2>
+                    <div class="container__vacationCalc">
+                        <form id="vacationCalc" class="calc__form">
+                            <input type="text" placeholder="Escriba el destino/Destiny" id="destiny"
+                                class="calc__form-input" required />
+                            <input type="number" placeholder="Escriba su presupuesto/budget" id="budget"
+                                class="calc__form-input" required />
+                            <input type="number" placeholder="Escriba el precio del alojamiento/Acomodation"
+                                id="acomodation" class="calc__form-input" required />
+                            <input type="number" placeholder="Escriba el precio del transporte/Transport "
+                                id="transport" class="calc__form-input" required />
+                            <input type="number" placeholder="Escriba el precio de la comida/Food" id="food"
+                                class="calc__form-input" required />
+                            <input type="submit" value="Calculate" class="btn-submit" />
+                        </form>
+                    </div>
+
+                </section>
+
+
+                <div class="container">
+                    <div class="icons">
+                        <h5><i class="fas fa-plane"></i></h5>
+                        <h5><i class="fas fa-wallet"></i></h5>
+                        <h5><i class="fas fa-money-bill-wave-alt"></i></h5>
+                    </div>
+
+                    <div class="data">
+                        <div class="result" id="result"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -223,6 +237,12 @@
                             <a href="#">Más Información...</a>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="clock">
+                <div class="container-clock">
+                    <h3 id="time">00:00:00</h3>
+                    <p id="date">date</p>
                 </div>
             </section>
         </section>
