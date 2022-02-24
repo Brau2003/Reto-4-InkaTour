@@ -11,6 +11,15 @@ function toggleMenu() {
 openMenuBtn.addEventListener("click", toggleMenu)
 closeMenuBtn.addEventListener("click", toggleMenu)
 
+const headerNavLinkItem = [...document.querySelectorAll('.items')];
+console.log(headerNavLinkItem);
+
+headerNavLinkItem.map((element) => {
+    element.addEventListener('click', toggleMenu);
+});
+
+
+
 // CALCULADORA DE PRESUPUESTO DE VIAJES
 
 let vacationCalc = document.getElementById('vacationCalc')
