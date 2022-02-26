@@ -1,4 +1,4 @@
-// NAVBAR
+// MENU HAMBURGUESA
 
 const menu = document.querySelector (".menu");
 const openMenuBtn = document.querySelector (".open-menu");
@@ -10,6 +10,15 @@ function toggleMenu() {
 
 openMenuBtn.addEventListener("click", toggleMenu)
 closeMenuBtn.addEventListener("click", toggleMenu)
+
+const headerNavLinkItem = [...document.querySelectorAll('.items')];
+console.log(headerNavLinkItem);
+
+headerNavLinkItem.map((element) => {
+    element.addEventListener('click', toggleMenu);
+});
+
+
 
 // CALCULADORA DE PRESUPUESTO DE VIAJES
 
@@ -72,13 +81,20 @@ let ubicacionPrincipal  = window.pageYOffset;
 window.onscroll = function() {
     let Desplazamiento_Actual = window.pageYOffset;
     if(ubicacionPrincipal >= Desplazamiento_Actual){
-        document.getElementById('nav').style.top = '0';
+        document.getElementById('header').style.top = '0';
     }
     else{
-        document.getElementById('nav').style.top = '-80px';
+        document.getElementById('header').style.top = '-80px';
     }
     ubicacionPrincipal = Desplazamiento_Actual;
 }
+
+// const headerScroll = () => {
+//     const header = document.querySelector('#header')
+//     header.classList.toggle('',window.scrollY > 0)
+// }
+// window.addEventListener('scroll', headerScroll);
+
 
 // CLOCK
 
